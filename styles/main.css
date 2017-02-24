@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+/* TODO: build this to be fitted for mobile and add other rules for desktop*/
+
+body, h1, h2, ul, li, a, p{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+/* TODO:
+colors
+#dd8da3
+#965b6b
+#5D2031
+#A73353
+
+ */
+
+ .nav-bar {
+   /*
+   background-color: darkgrey;*/
+   display: block;
+ }
+
+ a {
+   display: block;
+   padding: 15px;
+   text-decoration: none;
+ }
+ li {
+   list-style: none;
+ }
+
+ header {
+     position: fixed;
+     width:100%;
+     top:0;
+ }
+
+ nav {
+     background: #dd8da3;
+ }
+
+ a:hover {
+    background: #A73353;
+}
+
+ .sub-menu {
+   /* TODO: sub-menu shift entire down when initiated why */
+   display: none;
+   background: #dd8da3;
+ }
+ .nav-bar {
+    display: flex;
+}
+
+/* mobile ///////////// color: green; ////////////// mobile  */
+
+ @media screen and (max-width:767px) {
+   .mobile-collapse {
+     display: none;
+   }
+   /* TODO: .sub-menu {
+     min-width: 100%;
+  } */
+   button {
+     font-size: 50px;
+     background: transparent;
+     /*
+     float: right;
+     margin-top: 4px;
+     optional, try using flexbox
+     */
+   }
+
+   .logo-bar .cell {
+      align-items: center;
+      text-align: center;
+   }
+   .navbar-brand {
+      flex-grow: 2;
+   }
+   .mobile-collapse .cell {
+      flex-grow: 1;
+   }
+
+ }
+
+/* medium ///////////// color: yellow; ////////////// medium  */
+
+ @media screen and (min-width:768px) {
+   li {
+     display: inline-block;
+   }
+   button {
+     display: none;
+   }
+   .drop-down .sub-menu {
+     position: absolute;
+   }
+
+
+ }
+
+/* medium ///////////// color: red; ////////////// medium  */
+
+ @media screen and (min-width:960px) {
+
+ }

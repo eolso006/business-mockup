@@ -1,0 +1,197 @@
+//@import '_reset.scss';
+* {
+    box-sizing: border-box;
+}
+
+/* TODO: build this to be fitted for mobile and add other rules for desktop*/
+
+body, ul, li, a{
+    font-family: Gotham, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo-bar {
+  background: #dd8da3;
+}
+
+header {
+  position: fixed;
+  width:100%;
+  top:0;
+}
+
+nav a {
+  display: block;
+  padding: 15px;
+}
+
+ .mobile-collapse, .logo-bar {
+     background: #dd8da3;
+     width: 100%;
+//     padding-left: 3%;
+ }
+
+ nav a:hover {
+    background: #A73353;
+}
+
+ .sub-menu {
+   display: none;
+   background: #dd8da3;
+ }
+ .nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    //display: block;
+}
+
+.logo-bar a {
+  font-size: 40px;
+}
+
+.logo-bar a span {
+  font-size: 35px;
+}
+
+.logo-bar a .tagline {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.image-wrap {
+  margin-top: 114px;
+  display: flex;
+}
+
+.mobile-stack {
+  background: #dd8da3;
+  font-size: 40px;
+  display: block;
+}
+
+i {
+  border: 1px solid white;
+  padding: 5px;
+  font-size: 10px;
+
+}
+
+/* TODO:
+colors
+#dd8da3
+#965b6b
+#5D2031
+#A73353
+ */
+
+/* mobile ///////////// color: green; ////////////// mobile  */
+
+ @media screen and (max-width:767px) {
+   .mobile-collapse {
+     display: none;
+     font-size: 30px;
+     padding: 5px;
+   }
+
+   button {
+     margin-top: 3.1%;
+     font-size: 50px;
+     background: #fff;
+     height: 55px;
+     border: none;
+     color: #dd8da3;
+   }
+
+   .logo-bar {
+     display: flex;
+     justify-content: center;
+   }
+
+   .navbar-brand {
+     text-align: center;
+     width: 370px;
+   }
+
+   .image-wrap {
+     justify-content: space-around;
+   }
+
+   .mobile-stack {
+     display: flex;
+     flex-direction: column;
+     margin-top: 15px;
+   }
+
+   .mobile-stack li {
+     border-top: 10px solid white;
+     padding: 5px;
+     display: flex;
+     justify-content: space-around;
+   }
+
+   .mobile-stack a {
+//     margin-right: 50px;
+   }
+
+ }
+
+/* medium ///////////// color: yellow; ////////////// medium  */
+
+ @media screen and (min-width:768px) {
+
+   button {
+     display: none;
+   }
+   .drop-down .sub-menu {
+     position: absolute;
+   }
+
+   .mobile-collapse {
+     display: flex;
+     align-items: flex-end;
+     justify-content:space-around;
+     font-size: 20px;
+   }
+
+   .nav-bar {
+      flex-wrap: nowrap;
+  }
+
+  .logo-bar {
+    width: 320px;
+  }
+
+  .tagline {
+    display: none;
+  }
+
+  .image-wrap {
+  }
+
+  .mobile-stack {
+  }
+
+  .mobile-stack li {
+  }
+
+ }
+
+/* medium ///////////// color: red; ////////////// medium  */
+
+ @media screen and (min-width:960px) {
+
+ }
